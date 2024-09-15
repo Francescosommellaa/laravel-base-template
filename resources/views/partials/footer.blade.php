@@ -1,3 +1,7 @@
-<footer class="my-5 text-center">
-    <p>by UdU</p>
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">
+            &copy; {{ date('Y') }} template Laravel di Francesco Sommella. All rights reserved.
+        </span>
+    </div>
 </footer>

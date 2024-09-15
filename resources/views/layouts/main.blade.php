@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Layout base | @yield('titlePage')</title>
+    <title>@yield('title')</title>
 
     {{-- Includiamo gli assets con la direttiva @vite --}}
     @vite('resources/js/app.js')
@@ -14,11 +14,13 @@
 
 <body>
 
-    @include('partials.navbar')
+    @include('partials.navbar') <!-- Include navbar -->
 
-    @yield('content')
+    <div class="container mt-5">
+        @yield('content') <!-- Contenuto dinamico -->
+    </div>
 
-    @include('partials.footer')
+    @include('partials.footer') <!-- Include footer -->
 
 </body>
 
